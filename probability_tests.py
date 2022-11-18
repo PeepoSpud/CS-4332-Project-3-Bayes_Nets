@@ -11,7 +11,7 @@ class ProbabilityTests(unittest.TestCase):
         """Test that the power plant network has the proper number of nodes and edges."""
         power_plant = make_power_plant_net()
         nodes = power_plant.nodes()
-        self.assertEqual(len(nodes), 5, msg="incorrect number of nodes")
+        self.assertEqual(len(nodes), 5, msg="incorrect number of nodes ")
         total_links = power_plant.number_of_edges()
         self.assertEqual(total_links, 5, msg="incorrect number of edges between nodes")
 
