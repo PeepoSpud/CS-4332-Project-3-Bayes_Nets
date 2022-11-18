@@ -1,4 +1,4 @@
-# CS-4332-Project-3-Bayes_Nets
+# CS 4332 : Project 3 - Bayes Nets
 CS 4332 Introduction to Artificial Intelligence
 
 Project 3 – Bayes Nets
