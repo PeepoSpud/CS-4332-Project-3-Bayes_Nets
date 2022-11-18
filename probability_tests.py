@@ -116,7 +116,7 @@ class ProbabilityTests2(unittest.TestCase):
         M_dist = M_node.get_values()
         self.assertEqual(len(M_dist), 2, msg='Incorrect Male distribution size')
         test_prob = M_dist[0]
-        self.assertEqual(round(float(test_prob*100)), 50, msg='Incorrect temperature distribution')
+        self.assertEqual(round(float(test_prob*100)), 50, msg='Incorrect Male distribution')
 
         # test Adult distribution
         A_node = mindfulness_net.get_cpds('adult')
@@ -134,7 +134,7 @@ class ProbabilityTests2(unittest.TestCase):
         D_dist = D_node.get_values()
         self.assertEqual(len(D_dist), 2, msg='Incorrect Disconnect distribution size')
         test_prob = D_dist[0]
-        self.assertEqual(round(float(test_prob*100)), 80, msg='Incorrect Adult distribution')
+        self.assertEqual(round(float(test_prob*100)), 80, msg='Incorrect Disconnect distribution')
         
         # then Calm distribution
         C_node = mindfulness_net.get_cpds('calm')
